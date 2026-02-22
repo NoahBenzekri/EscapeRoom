@@ -5,20 +5,23 @@ public class Interactable : MonoBehaviour
 {
 
     Outline outline;
-    public string message;
-
     public UnityEvent onInteract;
+    public static bool Iszoomed;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public virtual void Start()
     {
        outline = GetComponent<Outline>();
        disableOutline();
     }
 
-    public void Interact()
+    public virtual void Interact()
     {
-        onInteract.Invoke();
+        onInteract?.Invoke();
+    }
+
+    public virtual void Take()
+    {
+        Debug.Log("Nothing here Pal");
     }
     public void enableOutline()
     {
@@ -29,5 +32,13 @@ public class Interactable : MonoBehaviour
     {
         outline.enabled = false;
     }
-    
+      public static void EnterZoomMode()
+    {
+        Iszoomed = true;
+    }
+
+    public static void ExitZoomMode()
+    {
+        Iszoomed = false;
+    }
 }

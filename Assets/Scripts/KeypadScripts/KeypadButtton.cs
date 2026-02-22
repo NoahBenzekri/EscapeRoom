@@ -13,7 +13,7 @@ public class KeypadButtton : MonoBehaviour
     {
         if (keypad != null)
         {
-                 keypad.AddDigit(number);
+             keypad.AddDigit(number);
         }
     }       
 }

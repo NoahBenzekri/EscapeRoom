@@ -1,57 +1,60 @@
 using UnityEngine;
+using UnityEngine.Rendering.UI;
+
 
 public class NotePopUp : MonoBehaviour
 {
-    public Transform holdPoint;   // Camera/HoldPoint
-    public SimpleFPSController playerController; // drag Player here
+    public Transform holdPoint;
+    public PlayerMovement movement;
+    public MouseLook look;
 
-    Vector3 startingPosition;
-    Quaternion startRotation;
+    Vector3 startPos;
+    Quaternion startRot;
     Transform startParent;
 
-    bool isOpen;
+    bool open;
 
     void Start()
     {
-        startingPosition = transform.position;
-        startRotation = transform.rotation;
+        startPos = transform.position;
+        startRot = transform.rotation;
         startParent = transform.parent;
     }
 
     void Update()
     {
-        if (isOpen && Input.GetKeyDown(KeyCode.Escape))
-        {
+        if (open && Input.GetKeyDown(KeyCode.Escape))
             CloseNote();
-        }
     }
 
     public void PopUpToFace()
     {
-        isOpen = true;
+        Interactable.EnterZoomMode();
+        open = true;
 
-        // disable movement
-        playerController.enabled = false;
+        movement.enabled = false;
+        look.enabled = false;
+
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        // move note to camera
         transform.SetParent(holdPoint);
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity;
     }
 
-    void CloseNote()
+    public void CloseNote()
     {
-        isOpen = false;
+            Interactable.ExitZoomMode();
+        open = false;
 
-        // return to original position
         transform.SetParent(startParent);
-        transform.position = startingPosition;
-        transform.rotation = startRotation;
+        transform.position = startPos;
+        transform.rotation = startRot;
 
-        // re-enable movement
-        playerController.enabled = true;
+        movement.enabled = true;
+        look.enabled = true;
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }

@@ -4,6 +4,8 @@ public class Keypad : MonoBehaviour
 {
     public string correctCode;
     public string currentCode;
+    public Animation doorAnimation;
+
     public KeypadZoom keypadZoom;
 
       void Awake()
@@ -25,11 +27,13 @@ public class Keypad : MonoBehaviour
         if(currentCode == correctCode)
         {
             Debug.Log("Correct Code!");
+            doorAnimation.Play();
             if(keypadZoom != null)
             {
                 keypadZoom.ExitZoom();
+                //todo fix the zoom when finished code it exits 
             }
-            //todo unlcock door animation
+
         } else
         {
             Debug.Log("Wrong Code!");

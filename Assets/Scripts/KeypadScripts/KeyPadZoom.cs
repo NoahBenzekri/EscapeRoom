@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class KeypadZoom : MonoBehaviour
 {
-    public Transform zoomPoint;                
-    public Transform playerCamera;              
-    public SimpleFPSController playerController; 
+    public Transform zoomPoint;
+    public Transform cameraTransform;
+    public PlayerMovement movement;
+    public MouseLook look;
 
-    Vector3 camPos;
-    Quaternion camRot;
+    Vector3 startPos;
+    Quaternion startRot;
+    Transform startParent;
     bool zoomed;
 
     void Update()
@@ -15,23 +17,24 @@ public class KeypadZoom : MonoBehaviour
         if (zoomed && Input.GetKeyDown(KeyCode.Escape))
             ExitZoom();
     }
-
     public void EnterZoom()
     {
         if (zoomed) return;
         zoomed = true;
 
-        camPos = playerCamera.position;
-        camRot = playerCamera.rotation;
+        Interactable.EnterZoomMode();
 
-        playerController.enabled = false;
+        startPos = cameraTransform.localPosition;
+        startRot = cameraTransform.localRotation;
+
+        movement.enabled = false;
+        look.enabled = false;
+
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        playerCamera.position = zoomPoint.position;
-        playerCamera.rotation = zoomPoint.rotation;
-        Debug.Log(playerCamera + " " + zoomPoint + " " + playerController);
-
+        cameraTransform.position = zoomPoint.position;
+        cameraTransform.rotation = zoomPoint.rotation;
     }
 
     public void ExitZoom()
@@ -39,10 +42,15 @@ public class KeypadZoom : MonoBehaviour
         if (!zoomed) return;
         zoomed = false;
 
-        playerCamera.position = camPos;
-        playerCamera.rotation = camRot;
+        Interactable.ExitZoomMode();
 
-        playerController.enabled = true;
+    
+        cameraTransform.localPosition = startPos;
+        cameraTransform.localRotation = startRot;
+
+        movement.enabled = true;
+        look.enabled = true;
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
