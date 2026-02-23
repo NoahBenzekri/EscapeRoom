@@ -56,9 +56,6 @@ public class PlayerInteraction : MonoBehaviour
 
             if (newInteractable != null && newInteractable.enabled)
             {
-                if (currentInteractable != null && newInteractable != currentInteractable)
-                    currentInteractable.disableOutline();
-
                 SetNewCurrentInteractable(newInteractable);
                
                 return;

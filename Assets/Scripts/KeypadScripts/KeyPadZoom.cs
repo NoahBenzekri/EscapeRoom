@@ -42,9 +42,7 @@ public class KeypadZoom : MonoBehaviour
         if (!zoomed) return;
         zoomed = false;
 
-        Interactable.ExitZoomMode();
-
-    
+        
         cameraTransform.localPosition = startPos;
         cameraTransform.localRotation = startRot;
 
@@ -53,5 +51,6 @@ public class KeypadZoom : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+         Interactable.ExitZoomMode();
     }
 }

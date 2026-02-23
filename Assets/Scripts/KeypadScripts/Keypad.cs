@@ -28,6 +28,7 @@ public class Keypad : MonoBehaviour
         {
             Debug.Log("Correct Code!");
             doorAnimation.Play();
+            
             if(keypadZoom != null)
             {
                 keypadZoom.ExitZoom();

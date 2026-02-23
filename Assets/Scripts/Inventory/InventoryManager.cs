@@ -39,6 +39,12 @@ public class InventoryManager : MonoBehaviour
             Debug.Log("Removed from inventory: " + item);
         }
     }
+
+
+    /// <summary>
+    ///  TODO i need to make Hot bar to use item and place in like player slots. so h can hold multiple objects
+    /// 
+    /// </summary>
     void Start()
     {
         
