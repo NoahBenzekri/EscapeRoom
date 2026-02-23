@@ -8,7 +8,7 @@ public class CloseDoor1 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             doorAnimation.Play();
-            GetComponent<Collider>().enabled = false; // Disable the collider to prevent multiple triggers
+            GetComponent<Collider>().enabled = false; 
         }
     }
 
