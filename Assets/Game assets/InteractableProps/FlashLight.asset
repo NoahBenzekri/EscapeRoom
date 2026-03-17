@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2838624282d74a479240763ac2cbdf0, type: 3}
-  m_Name: ItemData
+  m_Name: FlashLight
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  itemType: 4
-  displayName: MainRoomNote
+  itemType: 0
+  displayName: 
   icon: {fileID: 0}
