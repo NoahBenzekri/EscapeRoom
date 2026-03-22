@@ -90,6 +90,18 @@ public class InventoryManager : MonoBehaviour
             Debug.Log("Removed from inventory: " + item);
         }
     }
+
+    public ItemData GetSelectedItem()
+    {
+        if(selectedSlot == -1 || selectedSlot >= inventoryItems.Count)
+        {
+            return null;
+        }
+        else
+        {
+            return inventoryItems[selectedSlot];
+        }
+    }
     void Update()
     {
 

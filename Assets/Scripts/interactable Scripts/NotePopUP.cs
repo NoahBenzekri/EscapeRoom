@@ -1,9 +1,11 @@
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Rendering.UI;
 
 
 public class NotePopUp : MonoBehaviour
 {
+    public static NotePopUp Instance;
     public Transform holdPoint;
     public PlayerMovement movement;
     public MouseLook look;
@@ -14,6 +16,10 @@ public class NotePopUp : MonoBehaviour
 
     bool open;
 
+    void Awake()
+    {
+        Instance = this;
+    }
     void Start()
     {
         startPos = transform.position;
@@ -29,6 +35,7 @@ public class NotePopUp : MonoBehaviour
 
     public void PopUpToFace()
     {
+        gameObject.SetActive(true);
         Interactable.EnterZoomMode();
         open = true;
 
@@ -45,7 +52,8 @@ public class NotePopUp : MonoBehaviour
 
     public void CloseNote()
     {
-            Interactable.ExitZoomMode();
+        gameObject.SetActive(false);
+        Interactable.ExitZoomMode();
         open = false;
 
         transform.SetParent(startParent);

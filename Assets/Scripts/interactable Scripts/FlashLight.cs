@@ -18,10 +18,11 @@ public class FlashLight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)&& InventoryManager.Instance.GetSelectedItem()?.itemType == Itemtype.Flashlight)
         {
             if (isON)
-            {
+            {   
+
                   on.SetActive(false);
                   off.SetActive(true);        
 

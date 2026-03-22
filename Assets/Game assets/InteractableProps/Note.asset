@@ -15,3 +15,4 @@ MonoBehaviour:
   itemType: 4
   displayName: MainRoomNote
   icon: {fileID: -1096905442, guid: d331e3f637eb307458b7df199c2202dc, type: 3}
+  heldPrefab: {fileID: 4335030112969793095, guid: dfa2c8c3df876f34287893e33406ea78, type: 3}

@@ -45,6 +45,19 @@ public class PlayerInteraction : MonoBehaviour
             interactionText.gameObject.SetActive(false);
             return;
         }
+
+
+
+        if(Input.GetMouseButtonDown(0))
+        {
+            ItemData selected = InventoryManager.Instance.GetSelectedItem();
+            if(selected?.itemType == Itemtype.Note)
+            {
+             NotePopUp.Instance.PopUpToFace();
+            }
+        
+        }
+
     }
     void CheckForInteractable()
     {
@@ -80,5 +93,6 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
+   
    
 }

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2838624282d74a479240763ac2cbdf0, type: 3}
   m_Name: FlashLight
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  itemType: 0
-  displayName: 
-  icon: {fileID: 0}
+  itemType: 1
+  displayName: Flash light
+  icon: {fileID: 1303402623, guid: e0e38038e66c512478bbbda84663279c, type: 3}
+  heldPrefab: {fileID: 2026851623927473843, guid: 2e09245253d74ce45b3038633ed4343e, type: 3}

@@ -1,8 +1,10 @@
+using TMPro;
 using UnityEngine;
 
 public class ItemPickUp : MonoBehaviour
 {
     public ItemData itemData;
+    public bool dontDestroy = false;
     public void Pickup()
     {
         if (itemData == null)
@@ -12,6 +14,14 @@ public class ItemPickUp : MonoBehaviour
         }
 
         InventoryManager.Instance.AddItem(itemData);
-        Destroy(gameObject);
+        if (dontDestroy)
+        {
+            gameObject.SetActive(false);
+
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
