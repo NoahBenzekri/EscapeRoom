@@ -1,0 +1,405 @@
+fileFormatVersion: 2
+guid: ab45f2bbb5034dd45986a1868065c762
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door
+    second: {fileID: 2100000, guid: c78f8c0c71b4a9d4fa035872d22310de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 94fc24fad1701c74984475cd2a413c0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #39
+    second: {fileID: 2100000, guid: 9f6bf1eedf0044244a5bb95a2639e0cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Note
+    second: {fileID: 2100000, guid: f31d63466a7b1e04a9bd8e0ca469baa3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Planks
+    second: {fileID: 2100000, guid: ed9a367ca32a8cc43a29430af3a743e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ceiling
+    second: {fileID: 7371707639764869288, guid: 7503ce08e7cc32041b954b8852038624, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor
+    second: {fileID: 2100000, guid: fa97a0697d760c04db8a87e7387d6bcd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.020
+    second: {fileID: 2100000, guid: ff342c9aeafb20b448d8c9cb38790573, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.021
+    second: {fileID: 2100000, guid: 7b6e1c5ec8db782428647d26ca3db288, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.022
+    second: {fileID: 2100000, guid: 36fb997835b2c6e4fbb0aeac9b7130f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.023
+    second: {fileID: 2100000, guid: ac60213d7f80e7e4184ad48c12e69664, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.024
+    second: {fileID: 2100000, guid: e0b5220046ca5ed40ba205c6a04026e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.025
+    second: {fileID: 2100000, guid: c3aab48da34442446b283eabbbf5465b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.026
+    second: {fileID: 2100000, guid: 213d09ba58738874fb0535dde7305a92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.027
+    second: {fileID: 2100000, guid: 2569ebc6c884fbf4face87076bae4071, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.028
+    second: {fileID: 2100000, guid: 221d239ca7ea31546b55f0a39acba92b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.029
+    second: {fileID: 2100000, guid: 08fdf19a8d5cecb4384bbcae24bf7738, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.030
+    second: {fileID: 2100000, guid: 2658d67b2dbc57c4982b62ad47469574, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.031
+    second: {fileID: 2100000, guid: 9d19c361ee770c5439ff0849e2f45830, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.032
+    second: {fileID: 2100000, guid: 2ab9f6cecb4799443895f9beb8229bc7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.033
+    second: {fileID: 2100000, guid: 3e2e20bd1aafb7341b59bb7a90460dc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.034
+    second: {fileID: 2100000, guid: 7a35854402820ab44bc91f7f02522073, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.035
+    second: {fileID: 2100000, guid: 7c47dbbcb4ca2e3478c6a77730952bcc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.036
+    second: {fileID: 2100000, guid: 2af0fea171b995041bfb80920f18bcf4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.037
+    second: {fileID: 2100000, guid: 2713baf7dc9a50d45ad8a2567c173dc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.038
+    second: {fileID: 2100000, guid: 2c36bc90bc1b6474dac5727f1f4c184a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #11.039
+    second: {fileID: 2100000, guid: 2498571c30ae6414bbb5657d08c11d36, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #2.001
+    second: {fileID: 2100000, guid: 8f4fce5ed2d0cb248be4d51d3f9af07c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #22.001
+    second: {fileID: 2100000, guid: c1847799ba6fd5943a743770a015fecd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #29.001
+    second: {fileID: 2100000, guid: a018832f5308a624c8b2da40d3b541cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #31.001
+    second: {fileID: 2100000, guid: e31b4a69fe0a78a4da13b045ec350d56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #32.001
+    second: {fileID: 2100000, guid: d30379dbb3d271e4e902a6b7e4b1322c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #33.001
+    second: {fileID: 2100000, guid: 63e74991121ac9d48930599bd11cbcb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #5.016
+    second: {fileID: 2100000, guid: c527b1ed371902f418bf0ad663c486f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #5.017
+    second: {fileID: 2100000, guid: a2117babbec57094295e1f1549939781, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #5.018
+    second: {fileID: 2100000, guid: 29adb1d43d649d74f93a07a62a89dc29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #5.019
+    second: {fileID: 2100000, guid: b2ca0a665e4850445853d6d403d7eeb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #5.020
+    second: {fileID: 2100000, guid: 5bc2688a90f61564182a67bb344886c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #5.021
+    second: {fileID: 2100000, guid: b9f49ad470efc6f4894d3d8eb49de67b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #5.022
+    second: {fileID: 2100000, guid: 153f635cd4b68c049be9bd33cae1ace3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #5.023
+    second: {fileID: 2100000, guid: 75d0c9420098d904086730de3dedcfb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #5.024
+    second: {fileID: 2100000, guid: 83343a8cac6f28f4bae414de43959a2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #5.025
+    second: {fileID: 2100000, guid: 7cc75b36e158e934fa38ef5b61a69070, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #5.026
+    second: {fileID: 2100000, guid: 3cf23fef9436ae540823ef25e5326112, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #5.027
+    second: {fileID: 2100000, guid: 193d8306954ed8b4fbd923808af2adcb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #5.028
+    second: {fileID: 2100000, guid: 074cc93cccaa58246abfaee1f6dcc3f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #5.029
+    second: {fileID: 2100000, guid: 2a814d2b9a634f94fb371da8b7aefd15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #5.030
+    second: {fileID: 2100000, guid: 0380c921986f5b94dbee3b79d0e4c977, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_atlas_02_unlit_mat #5.031
+    second: {fileID: 2100000, guid: 847f02289982ec54984648b19e2fb97a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_brick_mat.001
+    second: {fileID: 2100000, guid: a544bcdb8c67bd044bdf1e1f3fa9c3b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_bulbglows_mat.001
+    second: {fileID: 2100000, guid: 56e74f76d80356a44a7173573fc423bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_fake_lighting_mat.001
+    second: {fileID: 2100000, guid: a650075c754197c45b09f8842932f1d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_fireembers_mat.001
+    second: {fileID: 2100000, guid: 506a2917aa323bc44b77356d9edd2010, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_godrays_mat.001
+    second: {fileID: 2100000, guid: c7e97752e3d444b4fb070816e330b59a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_tapestries_mat.001
+    second: {fileID: 2100000, guid: e6543909ea4dcf144ac75af12851b7fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_windows.001
+    second: {fileID: 2100000, guid: 6832f6c45bd2aa4449cff86bf4ae7c1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_woodplanks_mat.002
+    second: {fileID: 2100000, guid: 30ddaebcf19c3504a9cf5d6a479bb612, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pk_gryffindorcommonroom_woodplanks_mat.003
+    second: {fileID: 2100000, guid: db8ea06e40547064ca0bfd596321c6eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock
+    second: {fileID: 2100000, guid: f4f205b0a1cca1c4ab999c883b47eb92, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

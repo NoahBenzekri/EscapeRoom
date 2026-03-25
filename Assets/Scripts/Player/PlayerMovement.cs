@@ -3,7 +3,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
+    public float gravity = -9.18f;
     private CharacterController controller;
+    private Vector3 velocity;
 
     void Start()
     {
@@ -17,5 +19,14 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 move = transform.right * x + transform.forward * z;
         controller.Move(move * speed * Time.deltaTime);
+
+        //gravity
+        if(controller.isGrounded && velocity.y < 0)
+        {
+            velocity.y =-2f;
+        }
+
+        velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime);
     }
 }
