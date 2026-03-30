@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2838624282d74a479240763ac2cbdf0, type: 3}
+  m_Name: HallwayKey
+  m_EditorClassIdentifier: Assembly-CSharp::ItemData
+  itemType: 0
+  displayName: HallwayKey
+  icon: {fileID: 1435786626, guid: 7564af345d3adc241850563e2f5cee9a, type: 3}
+  heldPrefab: {fileID: 8133909370762735570, guid: 23e667e4adbce5041bece17e079e6e6a, type: 3}

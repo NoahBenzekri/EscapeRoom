@@ -49,7 +49,7 @@ public class PaintingChanger : MonoBehaviour
 
     public bool isCorrect()
     {
-        return rend.material.name == correctPainting.name+("(Instance)");
+        return Paintings[currentIndex] == correctPainting;
 
     }
 

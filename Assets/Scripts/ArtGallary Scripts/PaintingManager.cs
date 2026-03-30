@@ -1,10 +1,11 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class PaintingManager : MonoBehaviour
 {
     public static PaintingManager Instance;
     public PaintingChanger[] paintings;
-    public GameObject door;
+    public Animator doorAnimatior;
 
     void Awake()
     {
@@ -30,9 +31,10 @@ public class PaintingManager : MonoBehaviour
             }
         }
 
-        door.SetActive(false);
+    
+       doorAnimatior.SetTrigger("Open");
 
-        //// door opens need to add animaton
+       
     }
 
     void ResetAll()

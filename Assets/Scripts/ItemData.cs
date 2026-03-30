@@ -7,7 +7,7 @@ using UnityEngine;
         PuzzlePiece,
         Battery,
         Note,
-        food,
+        Food,
         
     }
 [CreateAssetMenu(fileName = "New item", menuName = "Inventory/ItemData")]

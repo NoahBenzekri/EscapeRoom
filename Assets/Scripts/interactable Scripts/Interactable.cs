@@ -7,7 +7,7 @@ public class Interactable : MonoBehaviour
     Outline outline;
     public UnityEvent onInteract;
     public static bool Iszoomed;
-    
+
     public virtual void Start()
     {
        outline = GetComponent<Outline>();
@@ -25,12 +25,11 @@ public class Interactable : MonoBehaviour
     }
     public void enableOutline()
     {
-        outline.enabled = true;
+        
     }
 
     public void disableOutline()
     {
-        outline.enabled = false;
     }
       public static void EnterZoomMode()
     {

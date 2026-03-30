@@ -18,6 +18,7 @@ public class NotePopUp : MonoBehaviour
 
     void Awake()
     {
+        gameObject.SetActive(true);
         Instance = this;
     }
     void Start()
