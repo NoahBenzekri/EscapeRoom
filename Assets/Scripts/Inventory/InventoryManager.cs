@@ -9,7 +9,7 @@ public class InventoryManager : MonoBehaviour
     private int selectedSlot = -1;
     public List<ItemData> inventoryItems = new List<ItemData>();
 
-     void Awake()
+    void Awake()
     {
         if (Instance == null)
         {
@@ -21,11 +21,7 @@ public class InventoryManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        foreach(Image icon in iconSlots)
-        {
-            icon.enabled = false;
-            // make sure icon is false on load
-        }
+        RefreshUI();
     }
 
     public void AddItem(ItemData item)
@@ -33,17 +29,13 @@ public class InventoryManager : MonoBehaviour
         inventoryItems.Add(item);
         Debug.Log("Added to inventory: " + item);
 
-        for(int i = 0; i < iconSlots.Length; i++)
+        for (int i = 0; i < iconSlots.Length; i++)
         {
-            if (!iconSlots[i].sprite!= null)
-            {
-                iconSlots[i].gameObject.SetActive(true);
-            }
             if (!iconSlots[i].enabled)
             {
-                
                 iconSlots[i].sprite = item.icon;
                 iconSlots[i].enabled = true;
+                iconSlots[i].gameObject.SetActive(true);
                 return;
             }
         }
@@ -75,25 +67,53 @@ public class InventoryManager : MonoBehaviour
                 Debug.Log("Used Battery");
                 break;
         }
-    
+
     }
     public bool HasItem(ItemData item)
     {
         return inventoryItems.Contains(item);
-    }   
+    }
 
     public void RemoveItem(ItemData item)
     {
         if (inventoryItems.Contains(item))
         {
+            int removedIndex = inventoryItems.IndexOf(item);
             inventoryItems.Remove(item);
             Debug.Log("Removed from inventory: " + item);
+
+            if (selectedSlot == removedIndex)
+            {
+                selectedSlot = -1;
+            }
+            else if (selectedSlot > removedIndex)
+            {
+                selectedSlot--;
+            }
+
+            RefreshUI();
         }
     }
 
+    public void RefreshUI()
+    {
+        for (int i = 0; i < iconSlots.Length; i++)
+        {
+            iconSlots[i].enabled = false;
+            iconSlots[i].sprite = null;
+            iconSlots[i].gameObject.SetActive(false);
+        }
+
+        for (int i = 0; i < inventoryItems.Count && i < iconSlots.Length; i++)
+        {
+            iconSlots[i].sprite = inventoryItems[i].icon;
+            iconSlots[i].enabled = true;
+            iconSlots[i].gameObject.SetActive(true);
+        }
+    }
     public ItemData GetSelectedItem()
     {
-        if(selectedSlot == -1 || selectedSlot >= inventoryItems.Count)
+        if (selectedSlot == -1 || selectedSlot >= inventoryItems.Count)
         {
             return null;
         }
@@ -109,22 +129,25 @@ public class InventoryManager : MonoBehaviour
         {
             SelectSlot(0);
 
-        } else if (Input.GetKeyDown(KeyCode.Alpha2))
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             SelectSlot(1);
 
-        } else if (Input.GetKeyDown(KeyCode.Alpha3))
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-             SelectSlot(2);
-        } else if (Input.GetKeyDown(KeyCode.Alpha4))
+            SelectSlot(2);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             SelectSlot(3);
-        } 
+        }
         if (Input.GetKeyDown(KeyCode.E))
         {
             UseSelectedItem();
         }
-      
-    
+
+
     }
 }
