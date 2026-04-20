@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class clickToRotate : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class clickToRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+            if (EventSystem.current.IsPointerOverGameObject()) return; // ← add this
+
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;

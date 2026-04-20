@@ -39,7 +39,6 @@ public class keypad1 : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("click check");
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 

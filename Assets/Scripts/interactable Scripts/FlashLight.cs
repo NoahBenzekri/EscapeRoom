@@ -1,10 +1,10 @@
 using UnityEngine;
-using System.Collections;
 
 public class FlashLight : MonoBehaviour
 {
     public GameObject on;
     public GameObject off;
+    public Light spotlight;
 
     private bool isON;
 
@@ -12,30 +12,27 @@ public class FlashLight : MonoBehaviour
     {
         on.SetActive(false);
         off.SetActive(true);
-        isON=false;
+        isON = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)&& InventoryManager.Instance.GetSelectedItem()?.itemType == Itemtype.Flashlight)
+        if (InventoryManager.Instance.GetSelectedItem()?.itemType != Itemtype.Flashlight) return;
+
+        if (Input.GetMouseButtonDown(0))
         {
-            if (isON)
-            {   
+            isON = !isON;
+            on.SetActive(isON);
+            off.SetActive(!isON);
+            spotlight.color = Color.white;
+        }
 
-                  on.SetActive(false);
-                  off.SetActive(true);        
-
-            }
-
-            if (!isON)
-            {
-                on.SetActive(true);
-                off.SetActive(false);        
-
-            }
-
-            isON=!isON;
+        if (isON)
+        {
+            if (Input.GetMouseButton(1)) // hold right click → purple
+                spotlight.color = new Color(0.5f, 0f, 1f);
+            else
+                spotlight.color = Color.white; // release → back to white
         }
     }
 }

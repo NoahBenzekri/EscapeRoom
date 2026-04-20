@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class PlayerInteraction : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
+
         if (Interactable.Iszoomed)
         {
             interactionText.gameObject.SetActive(false);
@@ -88,6 +90,8 @@ public class PlayerInteraction : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0))
         {
+                  if (EventSystem.current.IsPointerOverGameObject()) return;
+
             ItemData selected = InventoryManager.Instance.GetSelectedItem();
             if(selected?.itemType == Itemtype.Note)
             {

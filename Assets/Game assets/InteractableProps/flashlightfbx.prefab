@@ -478,3 +478,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FlashLight
   on: {fileID: 2230187247756302564}
   off: {fileID: 5472412288505318443}
+  spotlight: {fileID: 7536387061274628423}
