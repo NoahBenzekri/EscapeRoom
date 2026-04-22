@@ -5,7 +5,6 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
     public Image[] iconSlots = new Image[4];
-
     private int selectedSlot = -1;
     public List<ItemData> inventoryItems = new List<ItemData>();
 
@@ -22,6 +21,11 @@ public class InventoryManager : MonoBehaviour
         }
 
         RefreshUI();
+    }
+    void Update()
+    {
+        HandleInput();
+
     }
 
     public void AddItem(ItemData item)
@@ -43,8 +47,13 @@ public class InventoryManager : MonoBehaviour
 
     public void SelectSlot(int index)
     {
+        if (index < 0 || index >= inventoryItems.Count)
+        {
+            selectedSlot = -1;
+            return;
+        }
         selectedSlot = index;
-        Debug.Log("Selected:" + inventoryItems[selectedSlot].displayName);
+        ItemData item = inventoryItems[selectedSlot];
         ItemHoldManager.Instance.ShowItem(inventoryItems[selectedSlot]);
     }
     public void UseSelectedItem()
@@ -74,25 +83,34 @@ public class InventoryManager : MonoBehaviour
         return inventoryItems.Contains(item);
     }
 
+    public void RemoveSelectedItem()
+    {
+        if (selectedSlot == -1 || selectedSlot >= inventoryItems.Count) return;
+
+        inventoryItems.RemoveAt(selectedSlot);
+        ItemHoldManager.Instance.HideItem();
+
+        if (selectedSlot >= inventoryItems.Count)
+        {
+            selectedSlot = -1;
+        }
+        RefreshUI();
+    }
     public void RemoveItem(ItemData item)
     {
-        if (inventoryItems.Contains(item))
+        int index = inventoryItems.IndexOf(item);
+        if (index == -1) return;
+
+        inventoryItems.RemoveAt(index);
+        if (selectedSlot == index)
         {
-            int removedIndex = inventoryItems.IndexOf(item);
-            inventoryItems.Remove(item);
-            Debug.Log("Removed from inventory: " + item);
-
-            if (selectedSlot == removedIndex)
-            {
-                selectedSlot = -1;
-            }
-            else if (selectedSlot > removedIndex)
-            {
-                selectedSlot--;
-            }
-
-            RefreshUI();
+            selectedSlot = -1;
         }
+        else if (selectedSlot > index)
+        {
+            selectedSlot--;
+        }
+        RefreshUI();
     }
 
     public void RefreshUI()
@@ -122,9 +140,8 @@ public class InventoryManager : MonoBehaviour
             return inventoryItems[selectedSlot];
         }
     }
-    void Update()
+    void HandleInput()
     {
-
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             SelectSlot(0);
@@ -147,7 +164,7 @@ public class InventoryManager : MonoBehaviour
         {
             UseSelectedItem();
         }
-
-
     }
+
+
 }

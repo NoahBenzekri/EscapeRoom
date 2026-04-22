@@ -66,6 +66,10 @@ public class PlayerInteraction : MonoBehaviour
             {
                 interactionText.text = "Press E to interact";
             }
+            if(currentInteractable.CompareTag("KeyPadTarget"))
+            {
+                interactionText.text = "Click to enter code";
+            }
         }
         else
         {

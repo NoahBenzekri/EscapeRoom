@@ -313,15 +313,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 49a28ecfd434bf344aa1b39be5c682f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.0650387
+      value: -10.87
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 49a28ecfd434bf344aa1b39be5c682f1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1670082
+      value: -5.451
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 49a28ecfd434bf344aa1b39be5c682f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.737402
+      value: 16.46
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 49a28ecfd434bf344aa1b39be5c682f1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -479,3 +479,4 @@ MonoBehaviour:
   on: {fileID: 2230187247756302564}
   off: {fileID: 5472412288505318443}
   spotlight: {fileID: 7536387061274628423}
+  riddleText: {fileID: 0}

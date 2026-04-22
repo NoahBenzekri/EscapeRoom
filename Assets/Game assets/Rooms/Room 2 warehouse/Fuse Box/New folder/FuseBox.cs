@@ -15,7 +15,7 @@ public class FuseboxController : MonoBehaviour
 
     void Update()
     {
-        if (playerInZone && Input.GetKeyDown(KeyCode.F) && !hasOpened)
+        if (playerInZone && Input.GetKeyDown(KeyCode.E) && !hasOpened)
         {
             Debug.Log("F pressed, opening fusebox!");
             if (animator != null)

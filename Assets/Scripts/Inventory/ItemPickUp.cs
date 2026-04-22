@@ -9,11 +9,10 @@ public class ItemPickUp : MonoBehaviour
     {
         if (itemData == null)
         {
-            Debug.LogError("No ItemData assigned on " + gameObject.name);
             return;
         }
-
         InventoryManager.Instance.AddItem(itemData);
+
         if (dontDestroy)
         {
             gameObject.SetActive(false);

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.ProBuilder.Shapes;
 
 public class DoorController : MonoBehaviour
 {
@@ -7,10 +8,11 @@ public class DoorController : MonoBehaviour
    public bool consumeKeyOnUse = true;
 
 
+
    public Animator animator;
    public string OpenTrigger = "Open";
 
-
+    public DoorController otherDoor; // Reference to the other door
     private IDoorState currentState;
 
 
@@ -49,6 +51,10 @@ public class DoorController : MonoBehaviour
        if(animator != null)
         {
             animator.SetTrigger(OpenTrigger);
+        }
+        if(otherDoor != null && otherDoor.animator != null)
+        {
+            otherDoor.animator.SetTrigger(OpenTrigger);
         }
     }
 }

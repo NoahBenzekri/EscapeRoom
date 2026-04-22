@@ -31,9 +31,7 @@ public class PaintingManager : MonoBehaviour
             }
         }
 
-    
        doorAnimatior.SetTrigger("Open");
-
        
     }
 

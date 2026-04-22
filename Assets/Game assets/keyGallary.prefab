@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed32de9dc9dd38645988ca446a1a9e0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemPickUp
-  itemData: {fileID: 11400000, guid: f73cf43de97c9d643b01f1723df4c723, type: 2}
+  itemData: {fileID: 0}
   dontDestroy: 0
 --- !u!114 &8052249214001222497
 MonoBehaviour:

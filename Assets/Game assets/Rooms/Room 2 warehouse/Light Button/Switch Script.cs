@@ -18,11 +18,11 @@ public class LightButton : MonoBehaviour
 
     private void Update()
     {
-        if (PlayerInZone && Input.GetKeyDown(KeyCode.F))
+        if (PlayerInZone && Input.GetKeyDown(KeyCode.E))
         {
             ActivateLights();
         }
-        if (PlayerInZone && Input.GetKeyDown(KeyCode.F))
+        if (PlayerInZone && Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("F pressed");
             ActivateLights();

@@ -21,7 +21,7 @@ public class LockedDoorState : IDoorState
 
             if (door.consumeKeyOnUse)
             {
-                InventoryManager.Instance.RemoveItem(door.requiredKey);
+                InventoryManager.Instance.RemoveSelectedItem();
             }
 
             door.OpenDoorAnimations();
