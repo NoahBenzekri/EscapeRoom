@@ -12,7 +12,7 @@ public class DoorController : MonoBehaviour
    public Animator animator;
    public string OpenTrigger = "Open";
 
-    public DoorController otherDoor; // Reference to the other door
+    public DoorController otherDoor; 
     private IDoorState currentState;
 
 
